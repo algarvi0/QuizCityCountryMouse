@@ -21,7 +21,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -84,51 +83,51 @@ public class MainActivity extends AppCompatActivity {
 
     static final String SCORE_ACT_VALUE = "score";
 
-    static final String numSelectedRadionButton_VALUE="numSelectedRadionButton";
-    static final String numCheckedCheckBox_VALUE="numCheckedCheckBox";
-    static final String numFieldTextFields_VALUE="numFieldTextFields";
+    static final String NUMSELECTEDRADIONBUTTON_VALUE = "numSelectedRadionButton";
+    static final String NUMCHECKEDCHECKBOX_VALUE = "numCheckedCheckBox";
+    static final String NUMFIELDTEXTFIELDS_VALUE = "numFieldTextFields";
 
-    static final String radioButtonAnswer1aEnabled_VALUE="radioButtonAnswer1aEnabled";
-    static final String radioButtonAnswer1bEnabled_VALUE="radioButtonAnswer1bEnabled";
+    static final String RADIOBUTTONANSWER1AENABLED_VALUE = "radioButtonAnswer1aEnabled";
+    static final String RADIOBUTTONANSWER1BENABLED_VALUE = "radioButtonAnswer1bEnabled";
 
-    static final String radioButtonAnswer3aEnabled_VALUE="radioButtonAnswer3aEnabled";
-    static final String radioButtonAnswer3bEnabled_VALUE="radioButtonAnswer3bEnabled";
-    static final String radioButtonAnswer3cEnabled_VALUE="radioButtonAnswer3cEnabled";
+    static final String RADIOBUTTONANSWER3AENABLED_VALUE = "radioButtonAnswer3aEnabled";
+    static final String RADIOBUTTONANSWER3BENABLED_VALUE = "radioButtonAnswer3bEnabled";
+    static final String RADIOBUTTONANSWER3CENABLED_VALUE = "radioButtonAnswer3cEnabled";
 
-    static final String radioButtonAnswer4aEnabled_VALUE="radioButtonAnswer4aEnabled";
-    static final String radioButtonAnswer4bEnabled_VALUE="radioButtonAnswer4bEnabled";
-    static final String radioButtonAnswer4cEnabled_VALUE="radioButtonAnswer4cEnabled";
+    static final String RADIOBUTTONANSWER4AENABLED_VALUE = "radioButtonAnswer4aEnabled";
+    static final String RADIOBUTTONANSWER4BENABLED_VALUE = "radioButtonAnswer4bEnabled";
+    static final String RADIOBUTTONANSWER4CENABLED_VALUE = "radioButtonAnswer4cEnabled";
 
-    static final String radioButtonAnswer5aEnabled_VALUE="radioButtonAnswer5aEnabled";
-    static final String radioButtonAnswer5bEnabled_VALUE="radioButtonAnswer5bEnabled";
-    static final String radioButtonAnswer5cEnabled_VALUE="radioButtonAnswer5cEnabled";
+    static final String RADIOBUTTONANSWER5AENABLED_VALUE = "radioButtonAnswer5aEnabled";
+    static final String RADIOBUTTONANSWER5BENABLED_VALUE = "radioButtonAnswer5bEnabled";
+    static final String RADIOBUTTONANSWER5CENABLED_VALUE = "radioButtonAnswer5cEnabled";
 
-    static final String radioButtonAnswer7aEnabled_VALUE="radioButtonAnswer7aEnabled";
-    static final String radioButtonAnswer7bEnabled_VALUE="radioButtonAnswer7bEnabled";
-    static final String radioButtonAnswer7cEnabled_VALUE="radioButtonAnswer7cEnabled";
+    static final String RADIOBUTTONANSWER7AENABLED_VALUE = "radioButtonAnswer7aEnabled";
+    static final String RADIOBUTTONANSWER7BENABLED_VALUE = "radioButtonAnswer7bEnabled";
+    static final String RADIOBUTTONANSWER7CENABLED_VALUE = "radioButtonAnswer7cEnabled";
 
-    static final String checkButtonAnswer8aEnabled_VALUE="checkButtonAnswer8aEnabled";
-    static final String checkButtonAnswer8bEnabled_VALUE="checkButtonAnswer8bEnabled";
-    static final String checkButtonAnswer8cEnabled_VALUE="checkButtonAnswer8cEnabled";
+    static final String CHECKBUTTONANSWER8AENABLED_VALUE = "checkButtonAnswer8aEnabled";
+    static final String CHECKBUTTONANSWER8BENABLED_VALUE = "checkButtonAnswer8bEnabled";
+    static final String CHECKBUTTONANSWER8CENABLED_VALUE = "checkButtonAnswer8cEnabled";
 
-    static final String radioButtonAnswer9aEnabled_VALUE="radioButtonAnswer9aEnabled";
-    static final String radioButtonAnswer9bEnabled_VALUE="radioButtonAnswer9bEnabled";
-    static final String radioButtonAnswer9cEnabled_VALUE="radioButtonAnswer9cEnabled";
+    static final String RADIOBUTTONANSWER9AENABLED_VALUE = "radioButtonAnswer9aEnabled";
+    static final String RADIOBUTTONANSWER9BENABLED_VALUE = "radioButtonAnswer9bEnabled";
+    static final String RADIOBUTTONANSWER9CENABLED_VALUE = "radioButtonAnswer9cEnabled";
 
-    static final String radioButtonAnswer10aEnabled_VALUE="radioButtonAnswer10aEnabled";
-    static final String radioButtonAnswer10bEnabled_VALUE="radioButtonAnswer10bEnabled";
-    static final String radioButtonAnswer10cEnabled_VALUE="radioButtonAnswer10cEnabled";
+    static final String RADIOBUTTONANSWER10AENABLED_VALUE = "radioButtonAnswer10aEnabled";
+    static final String RADIOBUTTONANSWER10BENABLED_VALUE = "radioButtonAnswer10bEnabled";
+    static final String RADIOBUTTONANSWER10CENABLED_VALUE = "radioButtonAnswer10cEnabled";
 
-    static final String strAnswerQ1_VALUE = "strAnswerQ1";
-    static final String strAnswerQ2_VALUE = "strAnswerQ2";
-    static final String strAnswerQ3_VALUE = "strAnswerQ3";
-    static final String strAnswerQ4_VALUE = "strAnswerQ4";
-    static final String strAnswerQ5_VALUE = "strAnswerQ5";
-    static final String strAnswerQ6_VALUE = "strAnswerQ6";
-    static final String strAnswerQ7_VALUE = "strAnswerQ7";
-    static final String strAnswerQ8_VALUE = "strAnswerQ8";
-    static final String strAnswerQ9_VALUE = "strAnswerQ9";
-    static final String strAnswerQ10_VALUE= "strAnswerQ10";
+    static final String STRANSWERQ1_VALUE = "strAnswerQ1";
+    static final String STRANSWERQ2_VALUE = "strAnswerQ2";
+    static final String STRANSWERQ3_VALUE = "strAnswerQ3";
+    static final String STRANSWERQ4_VALUE = "strAnswerQ4";
+    static final String STRANSWERQ5_VALUE = "strAnswerQ5";
+    static final String STRANSWERQ6_VALUE = "strAnswerQ6";
+    static final String STRANSWERQ7_VALUE = "strAnswerQ7";
+    static final String STRANSWERQ8_VALUE = "strAnswerQ8";
+    static final String STRANSWERQ9_VALUE = "strAnswerQ9";
+    static final String STRANSWERQ10_VALUE = "strAnswerQ10";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -198,10 +197,8 @@ public class MainActivity extends AppCompatActivity {
         radioButtonAnswer10b = findViewById(R.id.id_radioButton_answer10b);
         radioButtonAnswer10c = findViewById(R.id.id_radioButton_answer10c);
         // Other TEXT's
-
         // Gets username from insertNameEditText textView
         userName = insertNameEditText.getText().toString();
-
         // Gets all answers values plus userName and compose the string to use in mail intent.
         answersString = userName + getString(R.string.messsageYouAnswered);
         strAnswer1 = "";
@@ -215,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
 		strAnswer9 = "";
 		strAnswer10 = "";
 
-//	    viewCounters("AO ABRIR \n","all");
+        //viewCounters("AO ABRIR \n","all");
 
         //  add submit button listener
         submitButton.setOnClickListener(new OnClickListener() {
@@ -283,51 +280,51 @@ public class MainActivity extends AppCompatActivity {
        savedInstanceState.putInt(SCORE_ACT_VALUE, scoreTotal);// Save scoreTotal value into the bundle
 //        savedInstanceState.putInt(totalQueryAnsweredQuestions_VALUE,totalQueryAnsweredQuestions);
 //        savedInstanceState.putInt(totalQueryNotAnsweredQuestions_VALUE,totalQueryNotAnsweredQuestions);
-        savedInstanceState.putInt(numSelectedRadionButton_VALUE,numSelectedRadionButton);
-        savedInstanceState.putInt(numCheckedCheckBox_VALUE,numCheckedCheckBox);
-        savedInstanceState.putInt(numFieldTextFields_VALUE,numFieldTextFields);
+        savedInstanceState.putInt(NUMSELECTEDRADIONBUTTON_VALUE, numSelectedRadionButton);
+        savedInstanceState.putInt(NUMCHECKEDCHECKBOX_VALUE, numCheckedCheckBox);
+        savedInstanceState.putInt(NUMFIELDTEXTFIELDS_VALUE, numFieldTextFields);
 
-        savedInstanceState.putBoolean(radioButtonAnswer1aEnabled_VALUE,radioButtonAnswer1a.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer1bEnabled_VALUE,radioButtonAnswer1b.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER1AENABLED_VALUE, radioButtonAnswer1a.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER1BENABLED_VALUE, radioButtonAnswer1b.isEnabled());
 
-        savedInstanceState.putBoolean(radioButtonAnswer3aEnabled_VALUE,radioButtonAnswer3a.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer3bEnabled_VALUE,radioButtonAnswer3b.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer3cEnabled_VALUE,radioButtonAnswer3c.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER3AENABLED_VALUE, radioButtonAnswer3a.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER3BENABLED_VALUE, radioButtonAnswer3b.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER3CENABLED_VALUE, radioButtonAnswer3c.isEnabled());
 
-        savedInstanceState.putBoolean(radioButtonAnswer4aEnabled_VALUE,radioButtonAnswer4a.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer4bEnabled_VALUE,radioButtonAnswer4b.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer4cEnabled_VALUE,radioButtonAnswer4c.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER4AENABLED_VALUE, radioButtonAnswer4a.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER4BENABLED_VALUE, radioButtonAnswer4b.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER4CENABLED_VALUE, radioButtonAnswer4c.isEnabled());
 
-        savedInstanceState.putBoolean(radioButtonAnswer5aEnabled_VALUE,radioButtonAnswer5a.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer5bEnabled_VALUE,radioButtonAnswer5b.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer5cEnabled_VALUE,radioButtonAnswer5c.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER5AENABLED_VALUE, radioButtonAnswer5a.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER5BENABLED_VALUE, radioButtonAnswer5b.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER5CENABLED_VALUE, radioButtonAnswer5c.isEnabled());
 
-        savedInstanceState.putBoolean(radioButtonAnswer7aEnabled_VALUE,radioButtonAnswer7a.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer7bEnabled_VALUE,radioButtonAnswer7b.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer7cEnabled_VALUE,radioButtonAnswer7c.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER7AENABLED_VALUE, radioButtonAnswer7a.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER7BENABLED_VALUE, radioButtonAnswer7b.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER7CENABLED_VALUE, radioButtonAnswer7c.isEnabled());
 
-        savedInstanceState.putBoolean(checkButtonAnswer8aEnabled_VALUE,CheckBox8a.isEnabled());
-        savedInstanceState.putBoolean(checkButtonAnswer8bEnabled_VALUE,CheckBox8b.isEnabled());
-        savedInstanceState.putBoolean(checkButtonAnswer8cEnabled_VALUE,CheckBox8c.isEnabled());
+        savedInstanceState.putBoolean(CHECKBUTTONANSWER8AENABLED_VALUE, CheckBox8a.isEnabled());
+        savedInstanceState.putBoolean(CHECKBUTTONANSWER8BENABLED_VALUE, CheckBox8b.isEnabled());
+        savedInstanceState.putBoolean(CHECKBUTTONANSWER8CENABLED_VALUE, CheckBox8c.isEnabled());
 
-        savedInstanceState.putBoolean(radioButtonAnswer9aEnabled_VALUE,radioButtonAnswer9a.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer9bEnabled_VALUE,radioButtonAnswer9b.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer9cEnabled_VALUE,radioButtonAnswer9c.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER9AENABLED_VALUE, radioButtonAnswer9a.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER9BENABLED_VALUE, radioButtonAnswer9b.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER9CENABLED_VALUE, radioButtonAnswer9c.isEnabled());
 
-        savedInstanceState.putBoolean(radioButtonAnswer10aEnabled_VALUE,radioButtonAnswer10a.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer10bEnabled_VALUE,radioButtonAnswer10b.isEnabled());
-        savedInstanceState.putBoolean(radioButtonAnswer10cEnabled_VALUE,radioButtonAnswer10c.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER10AENABLED_VALUE, radioButtonAnswer10a.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER10BENABLED_VALUE, radioButtonAnswer10b.isEnabled());
+        savedInstanceState.putBoolean(RADIOBUTTONANSWER10CENABLED_VALUE, radioButtonAnswer10c.isEnabled());
 
-        savedInstanceState.putString(strAnswerQ1_VALUE,strAnswer1);
-        savedInstanceState.putString(strAnswerQ2_VALUE,strAnswer2);
-        savedInstanceState.putString(strAnswerQ3_VALUE,strAnswer3);
-        savedInstanceState.putString(strAnswerQ4_VALUE,strAnswer4);
-        savedInstanceState.putString(strAnswerQ5_VALUE,strAnswer5);
-        savedInstanceState.putString(strAnswerQ6_VALUE,strAnswer6);
-        savedInstanceState.putString(strAnswerQ7_VALUE,strAnswer7);
-        savedInstanceState.putString(strAnswerQ8_VALUE,strAnswer8);
-        savedInstanceState.putString(strAnswerQ9_VALUE,strAnswer9);
-        savedInstanceState.putString(strAnswerQ10_VALUE,strAnswer10);
+        savedInstanceState.putString(STRANSWERQ1_VALUE, strAnswer1);
+        savedInstanceState.putString(STRANSWERQ2_VALUE, strAnswer2);
+        savedInstanceState.putString(STRANSWERQ3_VALUE, strAnswer3);
+        savedInstanceState.putString(STRANSWERQ4_VALUE, strAnswer4);
+        savedInstanceState.putString(STRANSWERQ5_VALUE, strAnswer5);
+        savedInstanceState.putString(STRANSWERQ6_VALUE, strAnswer6);
+        savedInstanceState.putString(STRANSWERQ7_VALUE, strAnswer7);
+        savedInstanceState.putString(STRANSWERQ8_VALUE, strAnswer8);
+        savedInstanceState.putString(STRANSWERQ9_VALUE, strAnswer9);
+        savedInstanceState.putString(STRANSWERQ10_VALUE, strAnswer10);
 
         // Always call the superclass so it can save the view hierarchy state
         super.onSaveInstanceState(savedInstanceState);
@@ -337,51 +334,51 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         scoreTotal = savedInstanceState.getInt(SCORE_ACT_VALUE);
-        numSelectedRadionButton = savedInstanceState.getInt(numSelectedRadionButton_VALUE);
-        numCheckedCheckBox = savedInstanceState.getInt(numCheckedCheckBox_VALUE);
-        numFieldTextFields = savedInstanceState.getInt(numFieldTextFields_VALUE);
+        numSelectedRadionButton = savedInstanceState.getInt(NUMSELECTEDRADIONBUTTON_VALUE);
+        numCheckedCheckBox = savedInstanceState.getInt(NUMCHECKEDCHECKBOX_VALUE);
+        numFieldTextFields = savedInstanceState.getInt(NUMFIELDTEXTFIELDS_VALUE);
 
-        radioButtonAnswer1a.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer1aEnabled_VALUE));
-        radioButtonAnswer1b.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer1bEnabled_VALUE));
+        radioButtonAnswer1a.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER1AENABLED_VALUE));
+        radioButtonAnswer1b.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER1BENABLED_VALUE));
 
-        radioButtonAnswer3a.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer3aEnabled_VALUE));
-        radioButtonAnswer3b.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer3bEnabled_VALUE));
-        radioButtonAnswer3c.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer3cEnabled_VALUE));
+        radioButtonAnswer3a.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER3AENABLED_VALUE));
+        radioButtonAnswer3b.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER3BENABLED_VALUE));
+        radioButtonAnswer3c.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER3CENABLED_VALUE));
 
-        radioButtonAnswer4a.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer4aEnabled_VALUE));
-        radioButtonAnswer4b.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer4bEnabled_VALUE));
-        radioButtonAnswer4c.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer4cEnabled_VALUE));
+        radioButtonAnswer4a.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER4AENABLED_VALUE));
+        radioButtonAnswer4b.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER4BENABLED_VALUE));
+        radioButtonAnswer4c.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER4CENABLED_VALUE));
 
-        radioButtonAnswer5a.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer5aEnabled_VALUE));
-        radioButtonAnswer5b.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer5bEnabled_VALUE));
-        radioButtonAnswer5c.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer5cEnabled_VALUE));
+        radioButtonAnswer5a.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER5AENABLED_VALUE));
+        radioButtonAnswer5b.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER5BENABLED_VALUE));
+        radioButtonAnswer5c.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER5CENABLED_VALUE));
 
-        radioButtonAnswer7a.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer7aEnabled_VALUE));
-        radioButtonAnswer7b.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer7bEnabled_VALUE));
-        radioButtonAnswer7c.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer7cEnabled_VALUE));
+        radioButtonAnswer7a.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER7AENABLED_VALUE));
+        radioButtonAnswer7b.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER7BENABLED_VALUE));
+        radioButtonAnswer7c.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER7CENABLED_VALUE));
 
-        CheckBox8a.setEnabled(savedInstanceState.getBoolean(checkButtonAnswer8aEnabled_VALUE));
-        CheckBox8b.setEnabled(savedInstanceState.getBoolean(checkButtonAnswer8bEnabled_VALUE));
-        CheckBox8c.setEnabled(savedInstanceState.getBoolean(checkButtonAnswer8cEnabled_VALUE));
+        CheckBox8a.setEnabled(savedInstanceState.getBoolean(CHECKBUTTONANSWER8AENABLED_VALUE));
+        CheckBox8b.setEnabled(savedInstanceState.getBoolean(CHECKBUTTONANSWER8BENABLED_VALUE));
+        CheckBox8c.setEnabled(savedInstanceState.getBoolean(CHECKBUTTONANSWER8CENABLED_VALUE));
 
-        radioButtonAnswer9a.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer9aEnabled_VALUE));
-        radioButtonAnswer9b.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer9bEnabled_VALUE));
-        radioButtonAnswer9c.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer9cEnabled_VALUE));
+        radioButtonAnswer9a.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER9AENABLED_VALUE));
+        radioButtonAnswer9b.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER9BENABLED_VALUE));
+        radioButtonAnswer9c.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER9CENABLED_VALUE));
 
-        radioButtonAnswer10a.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer10aEnabled_VALUE));
-        radioButtonAnswer10b.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer10bEnabled_VALUE));
-        radioButtonAnswer10c.setEnabled(savedInstanceState.getBoolean(radioButtonAnswer10cEnabled_VALUE));
+        radioButtonAnswer10a.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER10AENABLED_VALUE));
+        radioButtonAnswer10b.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER10BENABLED_VALUE));
+        radioButtonAnswer10c.setEnabled(savedInstanceState.getBoolean(RADIOBUTTONANSWER10CENABLED_VALUE));
 
-        strAnswer1 = (savedInstanceState.getString(strAnswerQ1_VALUE));
-        strAnswer2 = (savedInstanceState.getString(strAnswerQ2_VALUE));
-        strAnswer3 = (savedInstanceState.getString(strAnswerQ3_VALUE));
-        strAnswer4 = (savedInstanceState.getString(strAnswerQ4_VALUE));
-        strAnswer5 = (savedInstanceState.getString(strAnswerQ5_VALUE));
-        strAnswer6 = (savedInstanceState.getString(strAnswerQ6_VALUE));
-        strAnswer7 = (savedInstanceState.getString(strAnswerQ7_VALUE));
-        strAnswer8 = (savedInstanceState.getString(strAnswerQ8_VALUE));
-        strAnswer9 = (savedInstanceState.getString(strAnswerQ9_VALUE));
-        strAnswer10 = (savedInstanceState.getString(strAnswerQ10_VALUE));
+        strAnswer1 = (savedInstanceState.getString(STRANSWERQ1_VALUE));
+        strAnswer2 = (savedInstanceState.getString(STRANSWERQ2_VALUE));
+        strAnswer3 = (savedInstanceState.getString(STRANSWERQ3_VALUE));
+        strAnswer4 = (savedInstanceState.getString(STRANSWERQ4_VALUE));
+        strAnswer5 = (savedInstanceState.getString(STRANSWERQ5_VALUE));
+        strAnswer6 = (savedInstanceState.getString(STRANSWERQ6_VALUE));
+        strAnswer7 = (savedInstanceState.getString(STRANSWERQ7_VALUE));
+        strAnswer8 = (savedInstanceState.getString(STRANSWERQ8_VALUE));
+        strAnswer9 = (savedInstanceState.getString(STRANSWERQ9_VALUE));
+        strAnswer10 = (savedInstanceState.getString(STRANSWERQ10_VALUE));
 
     }
     /**
@@ -401,9 +398,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer1b.setEnabled(false);
                    // If showMessages its ON, show toast message.
                    if (showMessages) {
-                        Toast.makeText(this, "1) " + radionButton_text
-                                + "\n - CERTA ! \n"
-                                + "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                       Toast.makeText(this, getString(R.string.question1) + radionButton_text
+                               + getString(R.string.right)
+                               + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
                     }
                     strAnswer1 = radionButton_text;
                   //  disableRadioGroup(radioGroupAnswer1);
@@ -416,9 +413,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer1b.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-                        Toast.makeText(this, "1) " + radionButton_text
-                                + "\n - ERRADA ! \n"
-                                + "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question1) + radionButton_text
+                                + getString(R.string.wrong)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
                     }
                     strAnswer1 = radionButton_text;
                     //disableRadioGroup(radioGroupAnswer1);
@@ -434,9 +431,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer3c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "3) " + radionButton_text
-								+ "\n - CERTA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question3) + radionButton_text
+                                + getString(R.string.right)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer3 = radionButton_text;
                    // disableRadioGroup(radioGroupAnswer3);
@@ -451,9 +448,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer3c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "3) " + radionButton_text
-								+ "\n - ERRADA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question3) + radionButton_text
+                                + getString(R.string.wrong)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer3 = radionButton_text;
                    // disableRadioGroup(radioGroupAnswer3);
@@ -470,9 +467,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer4c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "4) " + radionButton_text
-								+ "\n - CERTA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question4) + radionButton_text
+                                + getString(R.string.right)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer4 = radionButton_text;
                    // radioGroupAnswer4.setEnabled(false);
@@ -487,9 +484,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer4c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "4) " + radionButton_text
-								+ "\n - ERRADA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question4) + radionButton_text
+                                + getString(R.string.wrong)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer4 = radionButton_text;
                   //  radioGroupAnswer4.setEnabled(false);
@@ -505,9 +502,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer5c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "5) " + radionButton_text
-								+ "\n - CERTA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question5) + radionButton_text
+                                + getString(R.string.right)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer5 = radionButton_text;
                     //disableRadioGroup(radioGroupAnswer5);
@@ -522,9 +519,8 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer5c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "5) " + radionButton_text
-								+ "\n - ERRADA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question5) + radionButton_text
+                                + getString(R.string.wrong) + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer5 = radionButton_text;
                     //disableRadioGroup(radioGroupAnswer5);
@@ -539,9 +535,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer7c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "7) " + radionButton_text
-								+ "\n - CERTA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question7) + radionButton_text
+                                + getString(R.string.right)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer7 = radionButton_text;
                     //disableRadioGroup(radioGroupAnswer7);
@@ -557,9 +553,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer7c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "7) " + radionButton_text
-								+ "\n - ERRADA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question7) + radionButton_text
+                                + getString(R.string.wrong)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer7 = radionButton_text;
                   //  disableRadioGroup(radioGroupAnswer7);
@@ -574,9 +570,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer9c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "9) " + radionButton_text
-								+ "\n - CERTA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question9) + radionButton_text
+                                + getString(R.string.right)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer9 = radionButton_text;
                   //  disableRadioGroup(radioGroupAnswer9);
@@ -593,9 +589,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer9c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
-						Toast.makeText(this, "9) " + radionButton_text
-								+ "\n - ERRADA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question9) + radionButton_text
+                                + getString(R.string.wrong)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer9 = radionButton_text;
                    // disableRadioGroup(radioGroupAnswer9);
@@ -611,9 +607,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer10c.setEnabled(false);
                     // If showMessages its ON, show toast message.
 					if (showMessages) {
-						Toast.makeText(this, "10) " + radionButton_text
-								+ "\n - CERTA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question10) + radionButton_text
+                                + getString(R.string.right)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
                     strAnswer10 = radionButton_text;
                    // disableRadioGroup(radioGroupAnswer10);
@@ -628,9 +624,9 @@ public class MainActivity extends AppCompatActivity {
                     radioButtonAnswer10c.setEnabled(false);
                     // If showMessages its ON, show toast message.
                     if (showMessages){
-						Toast.makeText(this, "10) " + radionButton_text
-							+ "\n - ERRADA ! \n"
-							+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question10) + radionButton_text
+                                + getString(R.string.wrong)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 						}
                     strAnswer10 = radionButton_text;
                     //disableRadioGroup(radioGroupAnswer10);
@@ -678,7 +674,8 @@ public class MainActivity extends AppCompatActivity {
         // If a its not checked but b and c are checked, add scoreTotal;
         if ((!checkBoxAnswer8a_checked) && (checkBoxAnswer8b_checked) && (checkBoxAnswer8c_checked)) {
             scoreTotal++;
-            if (showMessages)  Toast.makeText(this, "8) " + strAnswer8 + "\n - CERTA ! \n" + "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+            if (showMessages)
+                Toast.makeText(this, getString(R.string.question8) + strAnswer8 + getString(R.string.right) + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
         }
     }
     /**
@@ -697,9 +694,9 @@ public class MainActivity extends AppCompatActivity {
                 scoreTotal = scoreTotal + 1;
                 // If showMessages its ON, show toast message.
                 if (showMessages) {
-						Toast.makeText(this, "2) " + answeredQ2
-								+ "\n - CERTA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.question2) + answeredQ2
+                            + getString(R.string.right)
+                            + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
             }
         }
@@ -718,9 +715,9 @@ public class MainActivity extends AppCompatActivity {
             if (answeredQ6.toLowerCase().equalsIgnoreCase(correctAnswer6)) {
                 scoreTotal = scoreTotal + 1;
 					if (showMessages) {
-						Toast.makeText(this, "6) " + answeredQ6
-								+ "\n - CERTA ! \n"
-								+ "SCORE ATUAL: " + scoreTotal, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.question6) + answeredQ6
+                                + getString(R.string.right)
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
 					}
             }
         }
@@ -737,7 +734,7 @@ public class MainActivity extends AppCompatActivity {
         totalQueryNotAnsweredQuestions = 0;
 
         if (userName.isEmpty()) {
-            Toast.makeText(this, "Please enter your NAME !!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.enter_your_name), Toast.LENGTH_SHORT).show();
             insertNameEditText.requestFocus();
 
         } else {
@@ -755,7 +752,7 @@ public class MainActivity extends AppCompatActivity {
                 // If YES, message with result...
                 viewCounters("SEND RESULTS","score");
 
-                Toast.makeText(this, userName + " as suas respostas deverão ser enviadas para a professora via mail ! ", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, userName + getString(R.string.send_answers_by_mail), Toast.LENGTH_LONG).show();
 
                 //Send mail with answers.
                 sendEmail();
@@ -775,8 +772,11 @@ public class MainActivity extends AppCompatActivity {
     * Method to send mail with answers to the teacher mail.
      */
     private void sendEmail(){
-        composeAnswersString(); // Get composed string
+        composeAnswersString(); // Get Answers composed string
 
+        getString(R.string.messsageYouAnswered);
+        
+        
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse("mailto:" + teacherMail));
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "City and Country answers - from " + userName);
@@ -851,14 +851,14 @@ public class MainActivity extends AppCompatActivity {
                         + getString(R.string.question9) + strAnswer9 + "\n"
                         + getString(R.string.question10) + strAnswer10 + "\n"
                         + getString(R.string.total_score_statment) + scoreTotal + getString(R.string.slash)+ totalQuestions;
-                    Toast toast2 = Toast.makeText(this, userName + "\n" + answersString + "\n Total SCORE: " + scoreTotal, Toast.LENGTH_LONG);
+                Toast toast2 = Toast.makeText(this, userName + "\n" + answersString + getString(R.string.score_is) + scoreTotal, Toast.LENGTH_LONG);
                 toast2.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
                 toast2.show();
             }
 
             break;
             case "score": { //Show Only the score
-                Toast toast2 = Toast.makeText(this, userName + "\n Your Score is " + scoreTotal + " of " + totalQuestions, Toast.LENGTH_LONG);
+                Toast toast2 = Toast.makeText(this, userName + getString(R.string.score_is) + scoreTotal + " of " + totalQuestions, Toast.LENGTH_LONG);
                 toast2.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
                 toast2.show();
             }
@@ -869,18 +869,17 @@ public class MainActivity extends AppCompatActivity {
     private void composeAnswersString() {
         answersString = "Hi teacher, i scored " + scoreTotal + " of " + totalQuestions + "."+
                 "\n MY ANSWERS: \n" + "----------------------------- \n"
-
-
-                + "1) " + strAnswer1 + "\n"
-                + "2) " + strAnswer2 + "\n"
-                + "3) " + strAnswer3 + "\n"
-                + "4) " + strAnswer4 + "\n"
-                + "5) " + strAnswer5 + "\n"
-                + "6) " + strAnswer6 + "\n"
-                + "7) " + strAnswer7 + "\n"
-                + "8) " + strAnswer8 + "\n"
-                + "9) " + strAnswer9 + "\n"
-                + "10) " + strAnswer10 + "\n";
+                + getString(R.string.question1) + strAnswer1 + "\n"
+                + getString(R.string.question2) + strAnswer2 + "\n"
+                + getString(R.string.question3) + strAnswer3 + "\n"
+                + getString(R.string.question4) + strAnswer4 + "\n"
+                + getString(R.string.question5) + strAnswer5 + "\n"
+                + getString(R.string.question6) + strAnswer6 + "\n"
+                + getString(R.string.question7) + strAnswer7 + "\n"
+                + getString(R.string.question8) + strAnswer8 + "\n"
+                + getString(R.string.question9) + strAnswer9 + "\n"
+                + getString(R.string.question10) + strAnswer10 + "\n"
+                + getString(R.string.total_score_statment) + scoreTotal + getString(R.string.slash) + totalQuestions;
     }
 } //MAIN
 

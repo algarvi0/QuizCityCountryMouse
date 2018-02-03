@@ -53,7 +53,8 @@
     <string name="story_question10_answer3">like</string>
     <!--SCORE THE TEXT AREA-->
     <string name="score_button_text">SUBMIT QUIZ</string>
-    <string name="score_is">Your score is:</string>
+    <string name="score_is"> \n Your Score is </string>
+
     <string name="max_score">/10</string>
 
     <!--Score Messages-->
@@ -61,6 +62,13 @@
     <string name="score_msg_1_and_5">I bet you can do better ;)</string>
     <string name="score_msg_score_6_and_8">You are almost there !</string>
     <string name="score_msg_full_score">Good !</string>
+    <string name="wrong">\n Wrong !\n</string>
+    <string name="right">\n Right !\n</string>
+
+    <string name="actual_score">ACTUAL SCORE:</string>
+    <string name="enter_your_name">Please enter your Name !</string>
+    <string name="send_answers_by_mail">your answers should be sent to the teacher via email!</string>
+
 
     <!--RESET THE TEXT AREA-->
     <string name="reset_button_text">Reset All</string>
