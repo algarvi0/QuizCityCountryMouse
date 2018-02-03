@@ -19,7 +19,6 @@
             android:contentDescription="@string/story_book_image"
             app:srcCompat="@drawable/city_country_mouse2" />
 
-
         <EditText
             android:id="@+id/insert_user_name"
             style="@style/EditTextStyle"
@@ -45,19 +44,7 @@
             android:textColor="@android:color/background_dark"
             android:textSize="@dimen/text_size"
             tools:targetApi="jelly_bean" />
-
-        <!--Email-->
-        <!--<EditText-->
-        <!--android:id="@+id/mail_field"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginBottom="16dp"-->
-        <!--android:layout_marginLeft="16dp"-->
-        <!--android:layout_marginRight="16dp"-->
-        <!--android:hint="@string/insert_your_mail"-->
-        <!--android:inputType="textCapWords" />-->
         <!--Question 1-->
-
         <LinearLayout
             android:id="@+id/linear_layout_question1"
             android:layout_width="match_parent"
@@ -67,7 +54,6 @@
             android:nextFocusDown="@id/question2"
             android:nextFocusForward="@id/question2"
             android:orientation="vertical">
-
             <!--Question 1 -->
             <ImageView
                 android:id="@+id/imageViewQuestion1"
@@ -320,8 +306,8 @@
 
             <TextView
                 style="@style/QuestionsStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@color/material_deep_orange_500"
                 android:text="@string/story_question6"
                 android:textColor="#000000"

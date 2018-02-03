@@ -54,22 +54,21 @@
     <!--SCORE THE TEXT AREA-->
     <string name="score_button_text">SUBMIT QUIZ</string>
     <string name="score_is"> \n Your Score is </string>
-
     <string name="max_score">/10</string>
-
     <!--Score Messages-->
     <string name="score_msg_0">You really need to study !</string>
     <string name="score_msg_1_and_5">I bet you can do better ;)</string>
     <string name="score_msg_score_6_and_8">You are almost there !</string>
     <string name="score_msg_full_score">Good !</string>
-    <string name="wrong">\n Wrong !\n</string>
-    <string name="right">\n Right !\n</string>
-
-    <string name="actual_score">ACTUAL SCORE:</string>
+    <string name="wrong"> \u0020 Wrong  \u0020</string>
+    <string name="right"> \u0020 Right ! \u0020</string>
+    <string name="actual_score">ACTUAL SCORE:  \u0020</string>
     <string name="enter_your_name">Please enter your Name !</string>
-    <string name="send_answers_by_mail">your answers should be sent to the teacher via email!</string>
-
-
+    <string name="send_answers_by_mail">your answers should be sent to the teacher via email! \u0020</string>
+    <string name="no_mail_clients">No email clients installed !</string>
+    <string name="send_mail_using">Send email using…</string>
+    <string name="mail_subject">City and Country answers - from \u0020</string>
+    <string name="my_answers">MY ANSWERS:\u0020</string>
     <!--RESET THE TEXT AREA-->
     <string name="reset_button_text">Reset All</string>
     <!-- Commun -->
@@ -78,24 +77,23 @@
     <string name="country_mouse">Country Mouse Image</string>
     <string name="write_your_answer">write your answer…</string>
     <string name="after_reply">After reply all questions type your Name and click SUBMIT QUIZ !</string>
-
+    <string name="i_scored">Hi teacher, my score was \u0020</string>
     <string name="stringCorrectAnswer2">cousin</string>
     <string name="stringCorrectAnswer6">people</string>
-
     <!-- MESSAGES-->
     <string name="messsageYouAnswered">YOU ANSWERED: \n" + "----------------------------- \n</string>
-    <string name="question1">1) </string>
-    <string name="question2">2) </string>
-    <string name="question3">3) </string>
-    <string name="question4">4) </string>
-    <string name="question5">5) </string>
-    <string name="question6">6) </string>
-    <string name="question7">7) </string>
-    <string name="question8">8) </string>
-    <string name="question9">9) </string>
-    <string name="question10">10) </string>
+    <string name="question1">1)\u0020</string>
+    <string name="question2">2)\u0020</string>
+    <string name="question3">3)\u0020</string>
+    <string name="question4">4)\u0020</string>
+    <string name="question5">5)\u0020</string>
+    <string name="question6">6)\u0020</string>
+    <string name="question7">7)\u0020</string>
+    <string name="question8">8)\u0020</string>
+    <string name="question9">9)\u0020</string>
+    <string name="question10">10)\u0020</string>
     <string name="counters">COUNTERS</string>
-    <string name="total_score_statment">\n\n Total SCORE:</string>
+    <string name="total_score_statment">\n\nTotal SCORE:</string>
     <string name="slash">/</string>
 
 

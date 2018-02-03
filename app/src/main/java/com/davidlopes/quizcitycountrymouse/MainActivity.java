@@ -35,18 +35,48 @@ import android.widget.Toast;
  *
  */
 public class MainActivity extends AppCompatActivity {
+    static final String SCORE_ACT_VALUE = "score";
+    static final String NUMSELECTEDRADIONBUTTON_VALUE = "numSelectedRadionButton";
+    static final String NUMCHECKEDCHECKBOX_VALUE = "numCheckedCheckBox";
+    static final String NUMFIELDTEXTFIELDS_VALUE = "numFieldTextFields";
+    static final String RADIOBUTTONANSWER1AENABLED_VALUE = "radioButtonAnswer1aEnabled";
+    static final String RADIOBUTTONANSWER1BENABLED_VALUE = "radioButtonAnswer1bEnabled";
+    static final String RADIOBUTTONANSWER3AENABLED_VALUE = "radioButtonAnswer3aEnabled";
+    static final String RADIOBUTTONANSWER3BENABLED_VALUE = "radioButtonAnswer3bEnabled";
+    static final String RADIOBUTTONANSWER3CENABLED_VALUE = "radioButtonAnswer3cEnabled";
+    static final String RADIOBUTTONANSWER4AENABLED_VALUE = "radioButtonAnswer4aEnabled";
+    static final String RADIOBUTTONANSWER4BENABLED_VALUE = "radioButtonAnswer4bEnabled";
+    static final String RADIOBUTTONANSWER4CENABLED_VALUE = "radioButtonAnswer4cEnabled";
+    static final String RADIOBUTTONANSWER5AENABLED_VALUE = "radioButtonAnswer5aEnabled";
+    static final String RADIOBUTTONANSWER5BENABLED_VALUE = "radioButtonAnswer5bEnabled";
+    static final String RADIOBUTTONANSWER5CENABLED_VALUE = "radioButtonAnswer5cEnabled";
+    static final String RADIOBUTTONANSWER7AENABLED_VALUE = "radioButtonAnswer7aEnabled";
+    static final String RADIOBUTTONANSWER7BENABLED_VALUE = "radioButtonAnswer7bEnabled";
+    static final String RADIOBUTTONANSWER7CENABLED_VALUE = "radioButtonAnswer7cEnabled";
+    static final String CHECKBUTTONANSWER8AENABLED_VALUE = "checkButtonAnswer8aEnabled";
+    static final String CHECKBUTTONANSWER8BENABLED_VALUE = "checkButtonAnswer8bEnabled";
+    static final String CHECKBUTTONANSWER8CENABLED_VALUE = "checkButtonAnswer8cEnabled";
+    static final String RADIOBUTTONANSWER9AENABLED_VALUE = "radioButtonAnswer9aEnabled";
+    static final String RADIOBUTTONANSWER9BENABLED_VALUE = "radioButtonAnswer9bEnabled";
+    static final String RADIOBUTTONANSWER9CENABLED_VALUE = "radioButtonAnswer9cEnabled";
+    static final String RADIOBUTTONANSWER10AENABLED_VALUE = "radioButtonAnswer10aEnabled";
+    static final String RADIOBUTTONANSWER10BENABLED_VALUE = "radioButtonAnswer10bEnabled";
+    static final String RADIOBUTTONANSWER10CENABLED_VALUE = "radioButtonAnswer10cEnabled";
+    static final String STRANSWERQ1_VALUE = "strAnswerQ1";
+    static final String STRANSWERQ2_VALUE = "strAnswerQ2";
+    static final String STRANSWERQ3_VALUE = "strAnswerQ3";
+    static final String STRANSWERQ4_VALUE = "strAnswerQ4";
+    static final String STRANSWERQ5_VALUE = "strAnswerQ5";
+    static final String STRANSWERQ6_VALUE = "strAnswerQ6";
+    static final String STRANSWERQ7_VALUE = "strAnswerQ7";
+    static final String STRANSWERQ8_VALUE = "strAnswerQ8";
+    static final String STRANSWERQ9_VALUE = "strAnswerQ9";
+    static final String STRANSWERQ10_VALUE = "strAnswerQ10";
     private final static int totalQuestions = 10;
     private final static String correctAnswer2 = "cousin";
-    private final Context context = this;
     private final static String correctAnswer6 = "people";
     private final static String teacherMail = "algarvi0@gmail.com";
-
-    private int scoreTotal = 0;
-    private int totalQueryAnsweredQuestions=0;
-    private int totalQueryNotAnsweredQuestions=0;
-    private int numSelectedRadionButton = 0; // Number of selected RadionButton
-    private int numCheckedCheckBox = 0; // initialize the number of selected check boxes in quiz.
-    private int numFieldTextFields = 0; //initialize the number of filled text fields in quiz.
+    private final Context context = this;
     //RadioGroups
     RadioGroup radioGroupAnswer1;
     RadioGroup radioGroupAnswer3;
@@ -61,6 +91,12 @@ public class MainActivity extends AppCompatActivity {
     String Answer8a = "", Answer8b = "", Answer8c = "";
     //Booleans
     boolean showMessages; // To use to see control messages.
+    private int scoreTotal = 0;
+    private int totalQueryAnsweredQuestions = 0;
+    private int totalQueryNotAnsweredQuestions = 0;
+    private int numSelectedRadionButton = 0; // Number of selected RadionButton
+    private int numCheckedCheckBox = 0; // initialize the number of selected check boxes in quiz.
+    private int numFieldTextFields = 0; //initialize the number of filled text fields in quiz.
     //RadioButton
     private RadioButton radioButtonAnswer1a, radioButtonAnswer1b;
     private RadioButton radioButtonAnswer3a, radioButtonAnswer3b, radioButtonAnswer3c;
@@ -71,63 +107,14 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton radioButtonAnswer10a, radioButtonAnswer10b, radioButtonAnswer10c;
     // CheckBoxes
     private CheckBox CheckBox8a, CheckBox8b, CheckBox8c;
-
     //Edit Text
     private EditText answer2_editText;
     private EditText answer6_editText;
     private EditText insertNameEditText;
-
     //Strings
     private String answersString; // To store all answers values and use in mail intent.
     private String userName;
 
-    static final String SCORE_ACT_VALUE = "score";
-
-    static final String NUMSELECTEDRADIONBUTTON_VALUE = "numSelectedRadionButton";
-    static final String NUMCHECKEDCHECKBOX_VALUE = "numCheckedCheckBox";
-    static final String NUMFIELDTEXTFIELDS_VALUE = "numFieldTextFields";
-
-    static final String RADIOBUTTONANSWER1AENABLED_VALUE = "radioButtonAnswer1aEnabled";
-    static final String RADIOBUTTONANSWER1BENABLED_VALUE = "radioButtonAnswer1bEnabled";
-
-    static final String RADIOBUTTONANSWER3AENABLED_VALUE = "radioButtonAnswer3aEnabled";
-    static final String RADIOBUTTONANSWER3BENABLED_VALUE = "radioButtonAnswer3bEnabled";
-    static final String RADIOBUTTONANSWER3CENABLED_VALUE = "radioButtonAnswer3cEnabled";
-
-    static final String RADIOBUTTONANSWER4AENABLED_VALUE = "radioButtonAnswer4aEnabled";
-    static final String RADIOBUTTONANSWER4BENABLED_VALUE = "radioButtonAnswer4bEnabled";
-    static final String RADIOBUTTONANSWER4CENABLED_VALUE = "radioButtonAnswer4cEnabled";
-
-    static final String RADIOBUTTONANSWER5AENABLED_VALUE = "radioButtonAnswer5aEnabled";
-    static final String RADIOBUTTONANSWER5BENABLED_VALUE = "radioButtonAnswer5bEnabled";
-    static final String RADIOBUTTONANSWER5CENABLED_VALUE = "radioButtonAnswer5cEnabled";
-
-    static final String RADIOBUTTONANSWER7AENABLED_VALUE = "radioButtonAnswer7aEnabled";
-    static final String RADIOBUTTONANSWER7BENABLED_VALUE = "radioButtonAnswer7bEnabled";
-    static final String RADIOBUTTONANSWER7CENABLED_VALUE = "radioButtonAnswer7cEnabled";
-
-    static final String CHECKBUTTONANSWER8AENABLED_VALUE = "checkButtonAnswer8aEnabled";
-    static final String CHECKBUTTONANSWER8BENABLED_VALUE = "checkButtonAnswer8bEnabled";
-    static final String CHECKBUTTONANSWER8CENABLED_VALUE = "checkButtonAnswer8cEnabled";
-
-    static final String RADIOBUTTONANSWER9AENABLED_VALUE = "radioButtonAnswer9aEnabled";
-    static final String RADIOBUTTONANSWER9BENABLED_VALUE = "radioButtonAnswer9bEnabled";
-    static final String RADIOBUTTONANSWER9CENABLED_VALUE = "radioButtonAnswer9cEnabled";
-
-    static final String RADIOBUTTONANSWER10AENABLED_VALUE = "radioButtonAnswer10aEnabled";
-    static final String RADIOBUTTONANSWER10BENABLED_VALUE = "radioButtonAnswer10bEnabled";
-    static final String RADIOBUTTONANSWER10CENABLED_VALUE = "radioButtonAnswer10cEnabled";
-
-    static final String STRANSWERQ1_VALUE = "strAnswerQ1";
-    static final String STRANSWERQ2_VALUE = "strAnswerQ2";
-    static final String STRANSWERQ3_VALUE = "strAnswerQ3";
-    static final String STRANSWERQ4_VALUE = "strAnswerQ4";
-    static final String STRANSWERQ5_VALUE = "strAnswerQ5";
-    static final String STRANSWERQ6_VALUE = "strAnswerQ6";
-    static final String STRANSWERQ7_VALUE = "strAnswerQ7";
-    static final String STRANSWERQ8_VALUE = "strAnswerQ8";
-    static final String STRANSWERQ9_VALUE = "strAnswerQ9";
-    static final String STRANSWERQ10_VALUE = "strAnswerQ10";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -779,12 +766,12 @@ public class MainActivity extends AppCompatActivity {
         
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse("mailto:" + teacherMail));
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "City and Country answers - from " + userName);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.mail_subject) + userName);
         emailIntent.putExtra(Intent.EXTRA_TEXT, answersString);
         try {
-            startActivity(Intent.createChooser(emailIntent, "Send email using..."));
+            startActivity(Intent.createChooser(emailIntent, getString(R.string.send_mail_using)));
             } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(this, "No email clients installed.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.no_mail_clients), Toast.LENGTH_SHORT).show();
             }
         }
     /**
@@ -867,8 +854,8 @@ public class MainActivity extends AppCompatActivity {
     }
     
     private void composeAnswersString() {
-        answersString = "Hi teacher, i scored " + scoreTotal + " of " + totalQuestions + "."+
-                "\n MY ANSWERS: \n" + "----------------------------- \n"
+        answersString = getString(R.string.i_scored) + scoreTotal + " of " + totalQuestions + "." +
+                getString(R.string.my_answers)
                 + getString(R.string.question1) + strAnswer1 + "\n"
                 + getString(R.string.question2) + strAnswer2 + "\n"
                 + getString(R.string.question3) + strAnswer3 + "\n"
