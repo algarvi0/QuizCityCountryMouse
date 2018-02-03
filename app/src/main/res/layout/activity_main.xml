@@ -6,13 +6,11 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <!--Initial image-->
         <ImageView
-            android:id="@+id/InicialImageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_gravity="top"
@@ -30,7 +28,6 @@
             android:maxLines="1" />
 
         <TextView
-            android:id="@+id/id_textview_inicial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/default_margin"
@@ -46,7 +43,6 @@
             tools:targetApi="jelly_bean" />
         <!--Question 1-->
         <LinearLayout
-            android:id="@+id/linear_layout_question1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/default_margin"
@@ -56,7 +52,6 @@
             android:orientation="vertical">
             <!--Question 1 -->
             <ImageView
-                android:id="@+id/imageViewQuestion1"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_gravity="top"
@@ -65,14 +60,12 @@
                 android:paddingTop="5dp"
                 app:srcCompat="@drawable/country_mouse" />
             <TextView
-                android:id="@+id/question1"
                 style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/story_question1" />
 
             <RadioGroup
-                android:id="@+id/id_radio_group_answer1"
                 style="@style/AnswersStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -109,7 +102,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/id_question2"
                 style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -147,7 +139,6 @@
                 android:text="@string/story_question3"/>
 
             <RadioGroup
-                android:id="@+id/id_radio_group_answer3"
                 style="@style/AnswersStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -200,7 +191,6 @@
                 android:text="@string/story_question4"/>
 
             <RadioGroup
-                android:id="@+id/id_radio_group_answer4"
                 style="@style/AnswersStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -255,7 +245,6 @@
                 android:textSize="25sp" />
 
             <RadioGroup
-                android:id="@+id/id_radio_group_answer5"
                 style="@style/AnswersStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -350,7 +339,6 @@
                 android:textSize="25sp" />
 
             <RadioGroup
-                android:id="@+id/id_radio_group_answer7"
                 style="@style/AnswersStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -451,7 +439,6 @@
                 android:textSize="25sp" />
 
             <RadioGroup
-                android:id="@+id/id_radio_group_answer9"
                 style="@style/AnswersStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -505,7 +492,6 @@
                 android:textSize="25sp" />
 
             <RadioGroup
-                android:id="@+id/id_radio_group_answer10"
                 style="@style/AnswersStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -546,7 +532,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/id_message_name"
                 style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -593,7 +578,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/id_text_view_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"

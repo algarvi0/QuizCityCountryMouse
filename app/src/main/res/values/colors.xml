@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Deep Orange -->
-    <color name="material_deep_orange_50">#FBE9E7</color>
-    <color name="material_deep_orange_100">#FFCCBC</color>
-    <color name="material_deep_orange_200">#FFAB91</color>
-    <color name="material_deep_orange_300">#FF8A65</color>
-    <color name="material_deep_orange_400">#FF7043</color>
+    <color name="material_deep_orange_300" tools:keep="@color/material_deep_orange_300">#FF8A65
+    </color>
+    <color name="material_deep_orange_400" tools:keep="@color/material_deep_orange_400">#FF7043
+    </color>
     <color name="material_deep_orange_500">#ff5722</color>
-    <color name="material_deep_orange_600">#F4511E</color>
+    <color name="material_deep_orange_600" tools:keep="@color/material_deep_orange_600">#F4511E
+    </color>
     <color name="material_deep_orange_700">#E64A19</color>
-    <color name="material_deep_orange_800">#D84315</color>
-    <color name="material_deep_orange_900">#BF360C</color>
-    <color name="material_deep_orange_accent_100">#FF9E80</color>
+    <color name="material_deep_orange_800" tools:keep="@color/material_deep_orange_800">#D84315
+    </color>
+    <color name="material_deep_orange_900" tools:keep="@color/material_deep_orange_900">#BF360C
+    </color>
+    <color name="material_deep_orange_accent_100" tools:keep="@color/material_deep_orange_accent_100">
+        #FF9E80
+    </color>
     <color name="material_deep_orange_accent_200">#FF6E40</color>
-    <color name="material_deep_orange_accent_400">#FF3D00</color>
-    <color name="material_deep_orange_accent_700">#DD2C00</color>
+    <color name="material_deep_orange_accent_400" tools:keep="@color/material_deep_orange_accent_400">
+        #FF3D00
+    </color>
+    <color name="material_deep_orange_accent_700" tools:keep="@color/material_deep_orange_accent_700">
+        #DD2C00
+    </color>
 
     <!-- Green -->
-    <color name="material_green_50">#E8F5E9</color>
-    <color name="material_green_100">#C8E6C9</color>
-    <color name="material_green_200">#A5D6A7</color>
-    <color name="material_green_300">#81C784</color>
-    <color name="material_green_400">#66BB6A</color>
-    <color name="material_green_500">#4CAF50</color>
-    <color name="material_green_600">#43A047</color>
-    <color name="material_green_700">#388E3C</color>
-    <color name="material_green_800">#2E7D32</color>
-    <color name="material_green_900">#1B5E20</color>
-    <color name="material_green_accent_100">#B9F6CA</color>
-    <color name="material_green_accent_200">#69F0AE</color>
-    <color name="material_green_accent_400">#00E676</color>
-    <color name="material_green_accent_700">#00C853</color>
+    <color name="material_green_50" tools:keep="@color/material_green_50">#E8F5E9</color>
+    <color name="material_green_100" tools:keep="@color/material_green_100">#C8E6C9</color>
+    <color name="material_green_200" tools:keep="@color/material_green_200">#A5D6A7</color>
+    <color name="material_green_300" tools:keep="@color/material_green_300">#81C784</color>
+    <color name="material_green_400" tools:keep="@color/material_green_400">#66BB6A</color>
+    <color name="material_green_500" tools:keep="@color/material_green_500">#4CAF50</color>
+    <color name="material_green_600" tools:keep="@color/material_green_600">#43A047</color>
+    <color name="material_green_700" tools:keep="@color/material_green_700">#388E3C</color>
+    <color name="material_green_800" tools:keep="@color/material_green_800">#2E7D32</color>
+    <color name="material_green_900" tools:keep="@color/material_green_900">#1B5E20</color>
+    <color name="material_green_accent_100" tools:ignore="UnusedResources">#B9F6CA</color>
+    <color name="material_green_accent_200" tools:keep="@color/material_green_accent_200">#69F0AE
+    </color>
+    <color name="material_green_accent_400" tools:keep="@color/material_green_accent_400">#00E676
+    </color>
+    <color name="material_green_accent_700" tools:keep="@color/material_green_accent_700">#00C853
+    </color>
 </resources>
