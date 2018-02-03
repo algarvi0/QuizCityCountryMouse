@@ -1,18 +1,15 @@
 package com.davidlopes.quizcitycountrymouse;
 // 02-02-2018 - 8:59
 // TODO LIMPAR o não usado
+
 // TODO fazer com inputs e outputs ?
-// todo icone da app
+
 // TODO STRINGS.XML
+
 // TODO view in land
 
 // TODO Resolver problema ao rodar
-// VER ESTA FORMA DE CHEKAR AS RADIOBUTTONS
-// https://gist.github.com/IbhayiEP/0c329bd8310783da5bd63614eb60a334#file-java
-// VARIAS ACTIVITIES... https://github.com/Hany90/TarantinoQuiz
-// https://github.com/HassanMihai/ArtHistoryQuiz
-//METODOS PARA CHECK--- FUNCOES
-//https://github.com/Selver/GradedReaderQuiz/blob/master/app/src/main/java/com/example/android/gradedreaderquiz/QuizActivity.java
+
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -28,7 +25,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 /**
@@ -77,14 +73,6 @@ public class MainActivity extends AppCompatActivity {
     private final static String correctAnswer6 = "people";
     private final static String teacherMail = "algarvi0@gmail.com";
     private final Context context = this;
-    //RadioGroups
-    RadioGroup radioGroupAnswer1;
-    RadioGroup radioGroupAnswer3;
-    RadioGroup radioGroupAnswer4;
-    RadioGroup radioGroupAnswer5;
-    RadioGroup radioGroupAnswer7;
-    RadioGroup radioGroupAnswer9;
-    RadioGroup radioGroupAnswer10;
     // Buttons
     Button submitButton, resetButton;
     String strAnswer1, strAnswer2, strAnswer3, strAnswer4, strAnswer5, strAnswer6, strAnswer7, strAnswer8, strAnswer9, strAnswer10;
@@ -137,14 +125,6 @@ public class MainActivity extends AppCompatActivity {
 
         showMessages = false; //Set to False don't see messages. True see control messages
 
-        // RADIO GROUPS
-        radioGroupAnswer1 = findViewById(R.id.id_radio_group_answer1);
-        radioGroupAnswer3 = findViewById(R.id.id_radio_group_answer3);
-        radioGroupAnswer4 = findViewById(R.id.id_radio_group_answer4);
-        radioGroupAnswer5 = findViewById(R.id.id_radio_group_answer5);
-        radioGroupAnswer7 = findViewById(R.id.id_radio_group_answer7);
-        radioGroupAnswer9 = findViewById(R.id.id_radio_group_answer9);
-        radioGroupAnswer10 = findViewById(R.id.id_radio_group_answer10);
         //RADIO BUTTONS
         // 1
         radioButtonAnswer1a = findViewById(R.id.id_radioButton_answer1a);
@@ -208,18 +188,19 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
                 // set title
                 // Todo Strings Out to strings.xml
-                alertDialogBuilder.setTitle("SCORE THE QUIZ !");
+                alertDialogBuilder.setTitle(getString(R.string.submit_dialog_title));
                 // set dialog message
                 alertDialogBuilder
-                        .setMessage("Are you sure you want to score the QUIZ ?")
+                        .setMessage(getString(R.string.submit_dialog_question))
                         .setCancelable(false)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // if this button is clicked use sendResults method
                                 sendResults(MainActivity.this.submitButton);
+
                             }
                         })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        .setNegativeButton(getString(R.string.no), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // if NO button is clicked, close the dialog box and do nothing
                                 dialog.cancel();
@@ -237,17 +218,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
                 // set title
-                alertDialogBuilder.setTitle("RESET QUIZ !");
+                alertDialogBuilder.setTitle(getString(R.string.reset_dialog_title));
                 // set dialog message
-                alertDialogBuilder.setMessage("Are you sure you want to RESET the Quiz ? All ANSWERS will be deleted !");
+                alertDialogBuilder.setMessage(getString(R.string.reset_dialog_question));
                 alertDialogBuilder.setCancelable(false);
-                alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                alertDialogBuilder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // if this button is clicked call reset quiz to start over
-                        resetQuiz(MainActivity.this.resetButton);
+
+                        sendResults(MainActivity.this.resetButton);
+
                     }
                 });
-                alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                alertDialogBuilder.setNegativeButton(getString(R.string.no), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // if this button is clicked, just close the dialog box and do nothing
                         dialog.cancel();
@@ -366,7 +349,6 @@ public class MainActivity extends AppCompatActivity {
         strAnswer8 = (savedInstanceState.getString(STRANSWERQ8_VALUE));
         strAnswer9 = (savedInstanceState.getString(STRANSWERQ9_VALUE));
         strAnswer10 = (savedInstanceState.getString(STRANSWERQ10_VALUE));
-
     }
     /**
      * Method that checks correct answers for all RadioButton's;
@@ -737,20 +719,27 @@ public class MainActivity extends AppCompatActivity {
             // IF all answers are Answered (= totalquestions)...
             if (totalQueryAnsweredQuestions == totalQuestions) {
                 // If YES, message with result...
-                viewCounters("SEND RESULTS","score");
+                if (showMessages) {
+                    viewCounters("SEND RESULTS", "score");
+                }
 
                 Toast.makeText(this, userName + getString(R.string.send_answers_by_mail), Toast.LENGTH_LONG).show();
 
                 //Send mail with answers.
                 sendEmail();
                 // Reset all Quiz
-                resetQuiz(MainActivity.this.resetButton); // TODO Opção de RESET ?
-                } else //If NO, missing some anwsers...
+                resetQuiz(MainActivity.this.resetButton);
+
+            } else //If NO, missing some anwsers...
                 {
                     //If some questions to answer (including user name) send toast message ...
                     if ((totalQueryAnsweredQuestions < totalQuestions) && (!userName.isEmpty())) {
-                        Toast.makeText(this, userName + ", " + totalQueryNotAnsweredQuestions +
-                                " of " + totalQuestions + " missing ! \n Please answer ALL questions !", Toast.LENGTH_LONG).show();
+                        Toast.makeText(this, userName
+                                        + ", "
+                                        + totalQueryNotAnsweredQuestions
+                                        + " of " + totalQuestions
+                                        + " missing ! \n Please answer ALL questions !",
+                                Toast.LENGTH_LONG).show();
                     }
                 }
     }
@@ -869,6 +858,4 @@ public class MainActivity extends AppCompatActivity {
                 + getString(R.string.total_score_statment) + scoreTotal + getString(R.string.slash) + totalQuestions;
     }
 } //MAIN
-
-
 // TODO Next improvements:

@@ -96,5 +96,16 @@
     <string name="total_score_statment">\n\nTotal SCORE:</string>
     <string name="slash">/</string>
 
+    <string name="submit_dialog_title">SCORE THE QUIZ !</string>
+    <string name="submit_dialog_question">Are you sure you want to score the QUIZ ?</string>
+
+    <string name="reset_dialog_title">RESET THE QUIZ !</string>
+
+    <string name="reset_dialog_question">Are you sure you want to RESET the Quiz ? All ANSWERS will be deleted !</string>
+
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
 
 </resources>

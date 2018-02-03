@@ -111,8 +111,8 @@
             <TextView
                 android:id="@+id/id_question2"
                 style="@style/QuestionsStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="@string/story_question2" />
 
             <EditText
@@ -316,7 +316,7 @@
             <EditText
                 android:id="@+id/editText_q6"
                 style="@style/EditTextStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/write_your_answer"
