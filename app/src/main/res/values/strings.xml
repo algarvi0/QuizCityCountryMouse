@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Country Mouse and City Mouse</string>
+    <string name="name_of_story">The Country Mouse and the City Mouse</string>
+    <string name="story_description">Read the story and test your skills.</string>
+    <string name="story_book_image"> The City Mouse and The Country Mouse Book image.</string>
+
+    <!--story Questions / Answers-->
+    <!--QUESTION 1-->
+    <string name="story_question1">1. This is the ? </string>
+    <string name="story_question1_answer1">Country mouse</string>
+    <string name="story_question1_answer2">City mouse</string>
+    <!--QUESTION 2-->
+    <string name="story_question2">2. City Mouse is Country Mouse’s … </string>
+    <!--<string name="story_question2_answer1">Answer 1</string>-->
+    <!--QUESTION 3-->
+    <string name="story_question3">3. One day he comes to Country Mouse’s … </string>
+    <string name="story_question3_answer1">home</string>
+    <string name="story_question3_answer2">school</string>
+    <string name="story_question3_answer3">shop</string>
+    <!--QUESTION 4-->
+    <string name="story_question4">4. In the country at night, it’s very …  </string>
+    <string name="story_question4_answer1">noisy</string>
+    <string name="story_question4_answer2">quiet</string>
+    <string name="story_question4_answer3">dry</string>
+    <!--QUESTION 5-->
+    <string name="story_question5">5. City Mouse wants to go back to …  </string>
+    <string name="story_question5_answer1">the city</string>
+    <string name="story_question5_answer2">the country</string>
+    <string name="story_question5_answer3">the fields</string>
+    <!--QUESTION 6-->
+    <string name="story_question6">6. In the town, there are a lot of …  </string>
+    <!--<string name="story_question6_answer1">Answer 1</string>-->
+    Country Mouse thinks the town is very
+    <!--QUESTION 7-->
+    <string name="story_question7">7. Country Mouse thinks the town is very … </string>
+    <string name="story_question7_answer1">noisy</string>
+    <string name="story_question7_answer2">quiet</string>
+    <string name="story_question7_answer3">dark</string>
+    <!--QUESTION 8-->
+    <string name="story_question8">8. There’s a lot to … . </string>
+    <string name="story_question8_answer1">do</string>
+    <string name="story_question8_answer2">eat</string>
+    <string name="story_question8_answer3">see</string>
+    <!--QUESTION 9-->
+    <string name="story_question9">9. But Country Mouse thinks the … is strange. </string>
+    <string name="story_question9_answer1">table</string>
+    <string name="story_question9_answer2">room</string>
+    <string name="story_question9_answer3">food</string>
+    <!--QUESTION 10-->
+    <string name="story_question10">10. He doesn’t … it very much. </string>
+    <string name="story_question10_answer1">look</string>
+    <string name="story_question10_answer2">need</string>
+    <string name="story_question10_answer3">like</string>
+    <!--SCORE THE TEXT AREA-->
+    <string name="score_button_text">SUBMIT QUIZ</string>
+    <string name="score_is">Your score is:</string>
+    <string name="max_score">/10</string>
+
+    <!--Score Messages-->
+    <string name="score_msg_0">You really need to study !</string>
+    <string name="score_msg_1_and_5">I bet you can do better ;)</string>
+    <string name="score_msg_score_6_and_8">You are almost there !</string>
+    <string name="score_msg_full_score">Good !</string>
+
+    <!--RESET THE TEXT AREA-->
+    <string name="reset_button_text">Reset All</string>
+    <!-- Commun -->
+    <string name="insert_your_name">Insert your name</string>
+    <string name="insert_your_mail">Insert your mail address</string>
+    <string name="country_mouse">Country Mouse Image</string>
+    <string name="write_your_answer">write your answer…</string>
+    <string name="after_reply">After reply all questions type your Name and click SUBMIT QUIZ !</string>
+
+    <string name="stringCorrectAnswer2">cousin</string>
+    <string name="stringCorrectAnswer6">people</string>
+
+    <!-- MESSAGES-->
+    <string name="messsageYouAnswered">YOU ANSWERED: \n" + "----------------------------- \n</string>
+    <string name="question1">1) </string>
+    <string name="question2">2) </string>
+    <string name="question3">3) </string>
+    <string name="question4">4) </string>
+    <string name="question5">5) </string>
+    <string name="question6">6) </string>
+    <string name="question7">7) </string>
+    <string name="question8">8) </string>
+    <string name="question9">9) </string>
+    <string name="question10">10) </string>
+    <string name="counters">COUNTERS</string>
+    <string name="total_score_statment">\n\n Total SCORE:</string>
+    <string name="slash">/</string>
+
+
+</resources>
