@@ -54,9 +54,9 @@
     <!--Score Messages-->
     <string name="score_msg_less_5">I bet you can do better ;)</string>
     <string name="score_msg_less_9">You are almost there !</string>
-    <string name="score_msg_full_score">Good, you are a great reader!</string>
+    <string name="score_msg_full_score">Good, you are a great reader! \u0020</string>
 
-    <string name="wrong"> \u0020 Wrong  \u0020</string>
+    <string name="wrong">\u0020 Wrong  \u0020</string>
     <string name="right"> \u0020 Right ! \u0020</string>
     <string name="actual_score">ACTUAL SCORE:  \u0020</string>
     <string name="enter_your_name">Please enter your Name !</string>

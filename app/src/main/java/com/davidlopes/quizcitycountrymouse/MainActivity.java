@@ -406,7 +406,7 @@ public class MainActivity extends AppCompatActivity {
                    if (showMessages) {
                        Toast.makeText(this, getString(R.string.question1) + radionButton_text
                                + getString(R.string.right)
-                               + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                               + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
                     }
                     strAnswer1 = radionButton_text;
              }
@@ -420,7 +420,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question1) + radionButton_text
                                 + getString(R.string.wrong)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
                     }
                     strAnswer1 = radionButton_text;
                 }
@@ -437,7 +437,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question3) + radionButton_text
                                 + getString(R.string.right)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer3 = radionButton_text;
                 }
@@ -453,7 +453,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question3) + radionButton_text
                                 + getString(R.string.wrong)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer3 = radionButton_text;
                 }
@@ -470,7 +470,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question4) + radionButton_text
                                 + getString(R.string.right)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer4 = radionButton_text;
                 }
@@ -486,7 +486,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question4) + radionButton_text
                                 + getString(R.string.wrong)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer4 = radionButton_text;
                 }
@@ -503,7 +503,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question5) + radionButton_text
                                 + getString(R.string.right)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer5 = radionButton_text;
                 }
@@ -518,7 +518,7 @@ public class MainActivity extends AppCompatActivity {
                     // If showMessages its ON, show toast message.
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question5) + radionButton_text
-                                + getString(R.string.wrong) + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.wrong) + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer5 = radionButton_text;
                 }
@@ -534,7 +534,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question7) + radionButton_text
                                 + getString(R.string.right)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer7 = radionButton_text;
                 }
@@ -550,7 +550,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question7) + radionButton_text
                                 + getString(R.string.wrong)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer7 = radionButton_text;
                 }
@@ -566,7 +566,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question9) + radionButton_text
                                 + getString(R.string.right)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer9 = radionButton_text;
                 }
@@ -583,7 +583,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages) {
                         Toast.makeText(this, getString(R.string.question9) + radionButton_text
                                 + getString(R.string.wrong)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer9 = radionButton_text;
                 }
@@ -599,7 +599,7 @@ public class MainActivity extends AppCompatActivity {
 					if (showMessages) {
                         Toast.makeText(this, getString(R.string.question10) + radionButton_text
                                 + getString(R.string.right)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
                     strAnswer10 = radionButton_text;
 
@@ -616,7 +616,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showMessages){
                         Toast.makeText(this, getString(R.string.question10) + radionButton_text
                                 + getString(R.string.wrong)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 						}
                     strAnswer10 = radionButton_text;
                 }
@@ -660,7 +660,7 @@ public class MainActivity extends AppCompatActivity {
         if ((!checkBoxAnswer8a_checked) && (checkBoxAnswer8b_checked) && (checkBoxAnswer8c_checked)) {
             scoreTotal++;
             if (showMessages)
-                Toast.makeText(this, getString(R.string.question8) + strAnswer8 + getString(R.string.right) + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.question8) + strAnswer8 + getString(R.string.right) + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
         }
     }
     /**
@@ -681,7 +681,7 @@ public class MainActivity extends AppCompatActivity {
                 if (showMessages) {
                     Toast.makeText(this, getString(R.string.question2) + answeredQ2
                             + getString(R.string.right)
-                            + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                            + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
             }
         }
@@ -701,7 +701,7 @@ public class MainActivity extends AppCompatActivity {
 					if (showMessages) {
                         Toast.makeText(this, getString(R.string.question6) + answeredQ6
                                 + getString(R.string.right)
-                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_SHORT).show();
+                                + getString(R.string.actual_score) + scoreTotal, Toast.LENGTH_LONG).show();
 					}
             }
         }
@@ -717,7 +717,7 @@ public class MainActivity extends AppCompatActivity {
         totalQueryNotAnsweredQuestions = 0;
 
         if (userName.isEmpty()) {
-            Toast.makeText(this, getString(R.string.enter_your_name), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.enter_your_name), Toast.LENGTH_LONG).show();
             insertNameEditText.requestFocus();
 
         } else {
@@ -760,7 +760,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             startActivity(Intent.createChooser(emailIntent, getString(R.string.send_mail_using)));
             } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(this, getString(R.string.no_mail_clients), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.no_mail_clients), Toast.LENGTH_LONG).show();
             }
         }
     /**
