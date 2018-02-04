@@ -12,7 +12,7 @@
         <!--Initial image-->
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="@dimen/image_height250"
             android:layout_gravity="top"
             android:contentDescription="@string/story_book_image"
             app:srcCompat="@drawable/city_country_mouse2" />
@@ -35,7 +35,7 @@
             android:background="@color/material_deep_orange_500"
             android:fontFamily="@font/kaushan"
             android:gravity="center"
-            android:padding="8dp"
+            android:padding="@dimen/default_padding"
             android:selectAllOnFocus="false"
             android:text="@string/story_description"
             android:textColor="@android:color/background_dark"
@@ -53,11 +53,12 @@
             <!--Question 1 -->
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="@dimen/image_height300"
                 android:layout_gravity="top"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/default_margin"
                 android:contentDescription="@string/country_mouse"
-                android:paddingTop="5dp"
+                android:paddingTop="@dimen/default_padding_small"
+
                 app:srcCompat="@drawable/country_mouse" />
             <TextView
                 style="@style/QuestionsStyle"
@@ -332,7 +333,7 @@
                 style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="@dimen/default_padding"
                 android:background="@color/material_deep_orange_500"
                 android:text="@string/story_question7"
                 android:textColor="#000000"
@@ -432,7 +433,7 @@
                 style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="@dimen/default_padding"
                 android:background="@color/material_deep_orange_500"
                 android:text="@string/story_question9"
                 android:textColor="#000000"
@@ -485,7 +486,7 @@
                 style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="@dimen/default_padding"
                 android:background="@color/material_deep_orange_500"
                 android:text="@string/story_question10"
                 android:textColor="#000000"
@@ -535,9 +536,9 @@
                 style="@style/QuestionsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/default_padding"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="@dimen/default_padding"
                 android:text="@string/after_reply"
                 android:textColor="#000000"
                 android:textSize="18sp" />
@@ -554,11 +555,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="18dp"
+                    android:layout_marginBottom="@dimen/default_padding"
                     android:layout_weight="1"
                     android:background="@color/material_deep_orange_500"
                     android:onClick="sendResults"
-                    android:padding="8dp"
+                    android:padding="@dimen/default_padding"
                     android:text="@string/score_button_text"
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
@@ -568,10 +569,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="18dp"
+                    android:layout_marginBottom="@dimen/default_padding"
                     android:layout_weight="1"
                     android:background="@color/material_deep_orange_500"
-                    android:padding="8dp"
+                    android:padding="@dimen/default_padding"
                     android:text="@string/reset_button_text"
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
@@ -580,9 +581,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/default_padding"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="@dimen/default_padding"
                 android:text=""
                 android:textColor="#000000"
                 android:textSize="40sp" />
